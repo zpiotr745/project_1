@@ -1,0 +1,28 @@
+body{
+    color:#222222;
+    margin:0;
+    padding:0;
+}
+
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    color: #ffffff;
+    background-color: #198f50;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width:45%;
+    
+}
+
+.nav li{
+    list-style: none;
+}
