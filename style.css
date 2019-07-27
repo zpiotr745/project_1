@@ -4,9 +4,14 @@ body{
     padding:0;
 }
 
+.container{
+
+}
+
 
 .navbar{
-    position:fixed;
+    position: sticky;
+    top:0;
     width: 100%;
     display:flex;
     justify-content: space-around;
@@ -14,15 +19,29 @@ body{
     min-height: 8vh;
     color: #ffffff;
     background-color: #198f50;
+    min-width:550px ;
 }
 
 .nav{
     display: flex;
     justify-content: space-around;
-    width:45%;
-    
+    width:40%;
 }
 
 .nav li{
     list-style: none;
 }
+
+.header{
+    background-image: url(img/jonathan-riley-VW8MUbHyxCU-unsplash.jpg);
+    background-size: cover;
+    height:700px;
+
+}
+
+.welcome{
+    display:table-cell;
+    vertical-align:middle;
+    text-align: center;
+}
+
