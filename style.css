@@ -1,7 +1,11 @@
-body{
-    color:#222222;
+*{
     margin:0;
     padding:0;
+}
+
+body{
+    background-color: #eeeeee;
+    color:#222222;
 }
 
 .container{
@@ -19,13 +23,12 @@ body{
     min-height: 8vh;
     color: #ffffff;
     background-color: #198f50;
-    min-width:550px ;
 }
 
 .nav{
     display: flex;
     justify-content: space-around;
-    width:40%;
+    width:45%;
 }
 
 .nav li{
@@ -33,15 +36,84 @@ body{
 }
 
 .header{
-    background-image: url(img/jonathan-riley-VW8MUbHyxCU-unsplash.jpg);
+    display: flex;
+    background: url(img/jonathan-riley-VW8MUbHyxCU-unsplash.jpg) center;
     background-size: cover;
     height:700px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 
 }
 
-.welcome{
-    display:table-cell;
-    vertical-align:middle;
+h1{
+    font-size: 100px;
+    color:#e416b0;
+}
+
+h2{
+    font-size:40px;
+    color:#ffffff;
+    height:;
+}
+
+.watchword{
     text-align: center;
+    font-size:36px;
+    margin:30px 0px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
 }
 
+button{
+    width: 150px;
+    border: 1px solid #ffc53d;
+    background:#ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin:0 40px;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    margin:auto;
+    background-color: #ffffff;
+    max-width: 800px;
+
+}
+
+.description{
+    width:350px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left:20px;
+}
+
+h3{
+    position: relative;
+    right:20%;
+    letter-spacing: 4px;
+    text-transform:uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:30px;
+ 
+    
+}
+
+.data{
+    border-right:2px dotted #ffc53d;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: 200px;
+    line-height: 30px;
+}
+
+p
