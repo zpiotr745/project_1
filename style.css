@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -16,28 +17,30 @@ body{
 .navbar{
     position: sticky;
     top:0;
-    width: 100%;
     display:flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    padding:20px 40px;
     min-height: 8vh;
     color: #ffffff;
-    background-color: #198f50;
+    background-color: #9b7c3b;
 }
 
 .nav{
     display: flex;
-    justify-content: space-around;
-    width:45%;
+    list-style: none;
+
 }
 
 .nav li{
-    list-style: none;
+    margin-left:40px;
 }
+
+
+    
 
 .header{
     display: flex;
-    background: url(img/jonathan-riley-VW8MUbHyxCU-unsplash.jpg) center;
+    background: url(img/jonathan-riley-VW8MUbHyxCU-unsplash.jpg) center ;
     background-size: cover;
     height:700px;
     align-items: center;
@@ -47,21 +50,21 @@ body{
 
 }
 
+
 h1{
     font-size: 100px;
-    color:#e416b0;
+    color:#FFC53D;
 }
 
 h2{
-    font-size:40px;
+    font-size: 30px;
     color:#ffffff;
-    height:;
 }
 
 .watchword{
     text-align: center;
     font-size:36px;
-    margin:30px 0px;
+    margin:50px 0px;
 }
 .buttons{
     display: flex;
@@ -70,7 +73,7 @@ h2{
     margin:20px;
 }
 
-button{
+.buttons button{
     width: 150px;
     border: 1px solid #ffc53d;
     background:#ffffff;
@@ -85,19 +88,27 @@ button{
     padding:20px;
     margin:auto;
     background-color: #ffffff;
-    max-width: 800px;
+    max-width: 1100px;
+    margin-top:10px;
+    border:6px double ;
+
+}
+
+.data{
+    border-right:2px dotted #ffc53d;
+    padding: 20px;
+    line-height: 30px;
+    width:350px ;
 
 }
 
 .description{
-    width:350px;
     padding: 20px;
-    box-sizing: border-box;
-    margin-left:20px;
+    width:600px ;
 }
 
 h3{
-    position: relative;
+
     right:20%;
     letter-spacing: 4px;
     text-transform:uppercase;
@@ -108,12 +119,107 @@ h3{
     
 }
 
-.data{
-    border-right:2px dotted #ffc53d;
-    padding: 20px;
-    box-sizing: border-box;
-    min-width: 200px;
-    line-height: 30px;
+.skills{
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+    margin-top:40px;
+    background-color: #ffffff;
+    width: 80vw;
+    margin-bottom:40px; 
+
 }
 
-p
+.color{
+    color:#ffc53d;
+}
+
+.portfolio{
+    display:grid;
+    grid-template-rows:1fr 1fr ;
+    grid-template-columns: 3fr 3fr 4fr;
+    height:56vw;
+    margin:60px 0;
+
+}
+
+.img_1{
+    grid-area: 1/1/2/3;
+    background:  url(img/al-ghazali-vpTr0KN4vdY-unsplash.jpg) center;
+    background-size: cover;
+}
+
+.img_2{
+    grid-area: 1/3/3/4;
+    background: url(img/nikita-kachanovsky-bLY5JqP_Ldw-unsplash.jpg) center;
+    background-size: cover; 
+}
+
+.img_3{
+    background:url(img/toa-heftiba-yz4VF6x0W3M-unsplash.jpg) center;
+    background-size: cover;
+    
+}
+
+.img_4{
+    background: url(img/spencer-davis-1mMY5J0VySM-unsplash.jpg) center;
+    background-size: cover;
+}
+
+.contact{
+ 
+display: flex;
+justify-content: center;
+margin:auto;
+max-width: 800px;
+height: 500px;
+}
+
+.contact_data{
+    background-color:#ffc53d;
+    width: 40%;
+    
+}
+
+.message{
+    background-color:#ffffff;
+    width: 60%;
+}
+
+.message p{
+    margin:30px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+}
+
+.message form input{
+    width: 280px;
+    margin: 20px;
+    padding:5px;
+    border:none;
+    border-radius:5px;
+    background-color: #eeeeee;
+    
+
+}
+
+.text{
+    height: 120px;
+
+}
+
+.message form button{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ffc53d;
+    width: 90px;
+    background-color: #eeeeee;
+    align-self: flex-end;
+}
