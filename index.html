@@ -17,10 +17,10 @@
                 </div>
 
                 <ul class="nav">
-                    <li>About me</li>
-                    <li>Skils</li>
-                    <li>portfolio</li>
-                    <li>contact</li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a href="#skills">Skils</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             
             </div>
@@ -30,18 +30,18 @@
                     <h2>My name is Designer</h2>
             </div>
 
-            <div >
+            <div class="rectangle" >
 
-                <p class=watchword>I am happy to help you with any problem</p>
+                <p class="watchword">I am happy to help you with any problem</p>
                
                 <div class="buttons">
-                    <button>Contact me</button>
-                    <button>Check my CV</button> 
+                    <a href="contact_me" target="_blank"><button class="button1">Contact me</button></a>
+                    <a href="CV" target="_blank"><button class="button2">Check my CV</button> </a>
                 </div>
 
             </div>
 
-            <h3>About me</h3>
+            <h3 id="aboutMe">About me</h3>
             
             <div class="aboutMe">
 
@@ -75,25 +75,30 @@
 
             </div>
 
-            <h3>Skils</h3>
+            <h3 id="skills">Skils</h3>
 
             <dic class="skills">
-                <div>
+                <div class=skill1>
+                    <img src="img/icons8-mobile-social-networking-64.png"/>
                     <p>UX/UI</p>
                     <p>Figma</p>
                 </div>
                 
-                <div>
+                <div class="skill2">
+                    <img src="img/icons8-web-design-64.png"/>
                     <p>Front End</p>
                     <p>Html, CSS, JS</p>
                 </div>
 
-                <div>
+                <div class="skill">
+                    <img src="img/icons8-module-50.png"/>
                     <p>Back End</p>
                     <p>PHP, Node.js</p>
                 </div>
             
             </dic>
+
+            <h3 id="portfolio">Portfolio</h3>
 
             <div class="portfolio">
                 <div class=img_1>coś</div>
@@ -103,7 +108,7 @@
 
             </div>
 
-            <h3>Contact us</h3>
+            <h3 id="contact">Contact us</h3>
 
             <div class="contact">
 
@@ -119,11 +124,15 @@
                         <input placeholder="Name" />
                         <input placeholder="Your e-mail adress"/>
                         <input placeholder="Topic" />
-                        <input class=text placeholder="Message" />
-                        <button>Send</button>
+                        <input class="text" placeholder="Message" />
+                        <button class="send">Send</button>
                     </form>
                 </div>
 
+            </div>
+
+            <div class="footer">
+                <p>Copyrights © 2019 CodersCrew</p>
             </div>
 
 

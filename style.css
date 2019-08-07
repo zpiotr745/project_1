@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 *{
     margin:0;
     padding:0;
@@ -5,7 +9,7 @@
 }
 
 body{
-    background-color: #eeeeee;
+    background-color: #ffffff;
     color:#222222;
 }
 
@@ -21,22 +25,25 @@ body{
     justify-content: space-between;
     padding:20px 40px;
     min-height: 8vh;
-    color: #ffffff;
-    background-color: #9b7c3b;
+    background-color: #ffc53d;
+    z-index: 1;
 }
 
 .nav{
     display: flex;
     list-style: none;
-
 }
 
 .nav li{
     margin-left:40px;
 }
 
+li a{
+    text-decoration: none;
+    color:#ffffff;
+}
 
-    
+   
 
 .header{
     display: flex;
@@ -46,8 +53,6 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-
 }
 
 
@@ -61,26 +66,53 @@ h2{
     color:#ffffff;
 }
 
+.rectangle{
+    height:140px;
+    margin-bottom:100px;
+}
+
 .watchword{
     text-align: center;
     font-size:36px;
-    margin:50px 0px;
+    font-family:sans-serif;
+    margin:50px 0;
 }
 .buttons{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:20px;
+    justify-content: center; 
 }
 
-.buttons button{
+.button1, .button2{
     width: 150px;
-    border: 1px solid #ffc53d;
-    background:#ffffff;
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 10px;
     margin:0 40px;
 }
+
+.button1{
+    border: 1px solid #ffc53d;
+    background: #ffffff;
+    color:#ffc53d;
+}
+
+.button1:hover{
+    border:none;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    color:#ffffff;
+}
+
+.button2{
+    background:linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    color:#ffffff;
+    border:none;
+}
+
+.button2:hover{
+    background: #ffffff;
+    color:#ffc53d;
+    border: 1px solid #ffc53d;
+}
+
 
 .aboutMe{
     display: flex;
@@ -89,8 +121,9 @@ h2{
     margin:auto;
     background-color: #ffffff;
     max-width: 1100px;
-    margin-top:10px;
+    margin-bottom:100px;
     border:6px double ;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -99,7 +132,6 @@ h2{
     padding: 20px;
     line-height: 30px;
     width:350px ;
-
 }
 
 .description{
@@ -108,26 +140,33 @@ h2{
 }
 
 h3{
-
-    right:20%;
     letter-spacing: 4px;
     text-transform:uppercase;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom:30px;
- 
-    
+    padding:70px 0 40px 0;
 }
 
 .skills{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     margin:auto;
-    margin-top:40px;
-    background-color: #ffffff;
-    width: 80vw;
-    margin-bottom:40px; 
+    width: 90vw;
+    margin-bottom:100px;
+}
 
+.skills div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 250px;
+    height:250px;
+    border:3px dotted #ffc53d;
+    margin:16px 8px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .color{
@@ -139,8 +178,7 @@ h3{
     grid-template-rows:1fr 1fr ;
     grid-template-columns: 3fr 3fr 4fr;
     height:56vw;
-    margin:60px 0;
-
+    margin-bottom:100px;
 }
 
 .img_1{
@@ -158,7 +196,6 @@ h3{
 .img_3{
     background:url(img/toa-heftiba-yz4VF6x0W3M-unsplash.jpg) center;
     background-size: cover;
-    
 }
 
 .img_4{
@@ -167,23 +204,27 @@ h3{
 }
 
 .contact{
- 
-display: flex;
-justify-content: center;
-margin:auto;
-max-width: 800px;
-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto;
+    max-width:1100px;
+    height: 500px;
+    margin-bottom: 50px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contact_data{
-    background-color:#ffc53d;
-    width: 40%;
-    
+    background-color:#FF9A3D;
+    width: 550px;
+    color:#ffffff; 
 }
 
 .message{
+    position: relative;
     background-color:#ffffff;
-    width: 60%;
+    width: 550px;
+    padding-bottom:100px;
 }
 
 .message p{
@@ -194,32 +235,42 @@ form{
     display:flex;
     flex-direction: column;
     align-items: center;
-
-    
-
 }
 
 .message form input{
-    width: 280px;
+    width: 80%;
     margin: 20px;
     padding:5px;
     border:none;
     border-radius:5px;
     background-color: #eeeeee;
-    
-
 }
 
 .text{
     height: 120px;
-
+    text-justify: auto;
 }
 
-.message form button{
+.send{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ffc53d;
     width: 90px;
-    background-color: #eeeeee;
-    align-self: flex-end;
+    border: 1px solid #ffc53d;
+    color:#ffc53d;
+    background: #ffffff;
+}
+
+.send:hover{
+    border:none;
+    color:#ffffff;
+    background:linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+}
+
+.footer{
+    padding:40px;
+    text-align: center;
+    font-size:16px;
 }
